@@ -76,7 +76,7 @@ export const chatbotHandler = async (
     Anda adalah asisten kesehatan digital. Hanya jawab pertanyaan seputar **diabetes**:
     Jawab sesuai konteks DiaMate dan pedoman di atas. Jika ada pertanyaan di luar topik, arahkan ke informasi kesehatan umum atau sarankan konsultasi dokter.
     PERINGATAN : Tolak menjawab topik di luar terkait data pasien
-    Berikan saran gaya hidup untuk menurunkan risiko diabetes dan menjaga resiko diabetes tetap aman dari data pasien yang diberikan, jika tidak ada Tolak menjawab topik di luar terkait data pasien dengan kalimat [maaf, model tidak merespon] (gunakan bahasa Indonesia yang sopan dan mudah dimengerti).
+    Berikan saran gaya hidup untuk menurunkan risiko diabetes dan menjaga resiko diabetes tetap aman dari data pasien yang diberikan, jika tidak ada Tolak menjawab topik di luar terkait data pasien dengan kalimat [maaf, model tidak merespon hal diluar konteks diabetes] (gunakan bahasa Indonesia yang sopan dan mudah dimengerti).
     `;
 
     const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
